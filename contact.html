@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="shotrcut icon"  type="x-icon" href="images/arrival-2-removebg-preview.png">
+    <!-- font awesome cdn link  -->
+ <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+ <!-- cusom css file link  -->
+ <link rel="stylesheet" href="css/style.css">
+
+ <!-- Latest compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+ <!-- Optional theme -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+ <!-- swiper css link  -->
+ <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-store"></i>Gadget Zone </a>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a class="fas fa-shopping-cart my-cart-icon" ><span class="badge badge-notify my-cart-badge"></span></a>
+        <a href="login.html" class="fas fa-user"></a>     
+    </div>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- side-bar section starts -->
+
+<div class="side-bar">
+
+    <div id="close-side-bar" class="fas fa-times"></div>
+
+    <div class="user">
+        <h3 id="customer_name"></h3>
+        <a onclick="logout()">log out</a>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html"> <i class="fas fa-angle-right"></i> home </a>
+        <a href="about.html"> <i class="fas fa-angle-right"></i> about </a>
+        <a href="products.html"> <i class="fas fa-angle-right"></i> products </a>
+        <a href="contact.html"> <i class="fas fa-angle-right"></i> contact </a>
+        <a href="login.html"> <i class="fas fa-angle-right"></i> login </a>
+        <a href="register.html"> <i class="fas fa-angle-right"></i> register </a>
+        <a href="order.html"> <i class="fas fa-angle-right"></i> Track Order </a>
+        
+    </nav>
+
+</div>
+
+<!-- side-bar section ends -->
+
+<!-- contact info section starts  -->
+
+<section class="info-container">
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-map-pin"></i>
+            <h3>address</h3>
+            <p>Nelspruit, Mpumulanga - 1200</p>
+        </div>
+
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <h3>email</h3>
+            <p>mushiana.desmond@gmail.com</p>
+      
+        </div>
+
+        <div class="box">
+            <i class="fas fa-phone"></i>
+            <h3>number</h3>
+            <p>067 850 4061</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- contact info section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact">
+
+    <form >
+        <h3>get in touch</h3>
+    <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe provident nihil non unde, quia magnam quibusdam ad obcaecati nam animi?</p>
+        --><div class="inputBox">
+            <input type="text" placeholder="your name" id="senderName">
+            <input type="email" placeholder="your email" id="senderEmail">
+        </div>
+        <div class="inputBox">
+            <input type="number" placeholder="your number" id="senderNumber">
+            <input type="text" placeholder="subject" id="senderSubject">
+        </div>
+        <textarea name="" placeholder="your message" id="senderBody" cols="30" rows="10"></textarea>
+        <input type="button" value="send message" class="btn" onclick="sendEmail()">
+    </form>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.0445393659984!2d30.979657249153785!3d-25.470188183690247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee84b8bd875767f%3A0x296f6e7d2c5a0b47!2sAdom%20Technologies!5e0!3m2!1sen!2sus!4v1657593330341!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!-- contact section ends -->
+
+<!-- newsletter section starts  -->
+
+<section class="newsletter">
+
+    <div class="content">
+        <h3>newsletter</h3>
+        <p>subscribe for weelky newsletter.</p>
+    </div>
+
+    <form action="">
+        <input type="email" name="" placeholder="enter your email" id="" class="email">
+        <input type="submit" value="subscribe" class="btn">
+    </form>
+
+</section>
+
+<!-- newsletter section ends -->
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="quick-links">
+
+    <img src="images/card_img.png" alt="">
+
+    <div class="links">
+        <a href="index.html"> home </a>
+        <a href="about.html"> about </a>
+        <a href="products.html"> products </a>
+        <a href="contact.html"> contact </a>
+        <a href="login.html"> login </a>
+        <a href="register.html"> register </a>
+   
+    </div>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+</section>
+
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script >
+    // Import the functions you need from the SDKs you need
+  
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyCPDXVDWxk_V1xs2LzUtYyZaxapdLB2_3k",
+        authDomain: "dso34bt-presentation.firebaseapp.com",
+        projectId: "dso34bt-presentation",
+        storageBucket: "dso34bt-presentation.appspot.com",
+        messagingSenderId: "85605634322",
+        appId: "1:85605634322:web:32e1f4923280c70e50a3cb",
+        measurementId: "G-05EXPR3F2J"
+};
+  
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    db.settings({timestampsInSnapshots:true});
+    firebase.analytics();
+  </script>
+
+<!-- custom js file link  -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="js/script.js"></script>
+<script src="js/register.js"></script>
+<script src="js/displayUser.js"></script>
+<script src="js/logout.js"></script>
+<script src="js/displayproduct.js"></script>
+<script src="js/sendmail.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script type='text/javascript' src="js/bootstrap.min.js"></script>
+<script type='text/javascript' src="js/jquery.mycart.js"></script>
+<script type="text/javascript">
+
+
+$(function () {
+
+  var goToCartIcon = function($addTocartBtn){
+    var $cartIcon = $(".my-cart-icon");
+    var $image = $('<img width="0px" height="0px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+    $addTocartBtn.prepend($image);
+    var position = $cartIcon.position();
+    $image.animate({
+      top: position.top,
+      left: position.left
+    }, 500 , "linear", function() {
+      $image.remove();
+    });
+  }
+
+  $('.my-cart-btn').myCart({
+    currencySymbol: 'R',
+    classCartIcon: 'my-cart-icon',
+    classCartBadge: 'my-cart-badge',
+    classProductQuantity: 'my-product-quantity',
+    classProductRemove: 'my-product-remove',
+    classCheckoutCart: 'my-cart-checkout',
+    affixCartIcon: true,
+    showCheckoutModal: true,
+    numberOfDecimals: 2,
+    
+    clickOnAddToCart: function($addTocart){
+      goToCartIcon($addTocart);
+    },
+    afterAddOnCart: function(products, totalPrice, totalQuantity) {
+      console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+    },
+    clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+      console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+    },
+    checkoutCart: function(products, totalPrice, totalQuantity) {
+      var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+      checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+      $.each(products, function(){
+        checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+      });
+      alert(checkoutString)
+      console.log("checking out", products, totalPrice, totalQuantity);
+    },
+
+    getDiscountPrice: function(products, totalPrice, totalQuantity) {
+      if (totalPrice >=10000) {
+        return totalPrice * 0.07
+      }else
+      return 0
+    }
+  });
+
+  $("#addNewProduct").click(function(event) {
+    var currentElementNo = $(".row").children().length + 1;
+    $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+  });
+});
+</script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-f28b29d1-e3f9-4578-bfa3-62850c85d0cf"></div>
+</body>
+</html>

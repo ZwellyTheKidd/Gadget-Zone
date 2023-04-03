@@ -1,0 +1,32 @@
+
+.w3l_search{
+	float: left;
+    width: 27%;
+    margin:.1em 0 0em 10em;
+    margin-left: 980px;
+    position: relative;
+    top: 40px;
+ 
+}
+.w3l_search input[type="text"]{
+	outline: none;
+    padding: 10px;
+    color: #212121;
+    font-size: 14px;
+    width: 85%;
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    
+}
+.w3l_search input[type="submit"]{
+	outline: none;
+    padding: 10px 0 9px;
+    width: 15%;
+    border: 1px solid;
+    position: relative;
+    background: url(../img/img-sp.png) no-repeat 14px 5px #898686;
+}
+.w3l_search input[type="submit"]:hover{
+    background: url(../img/img-sp.png) no-repeat 14px 5px#0f823b;
+}

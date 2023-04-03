@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>products</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="shotrcut icon"  type="x-icon" href="images/arrival-2-removebg-preview.png">
+
+    <!-- cusom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+ 
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+ 
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+ 
+ 
+    <!-- swiper css link  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="index.html" class="logo"> <i class="fas fa-store"></i>Gadget Zone </a>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <a class="fas fa-shopping-cart my-cart-icon" ><span class="badge badge-notify my-cart-badge"></span></a>
+        <a href="login.html" class="fas fa-user"></a>     
+    </div>
+</header>
+
+<!-- header section ends -->
+
+<!-- side-bar section starts -->
+
+<div class="side-bar">
+
+    <div id="close-side-bar" class="fas fa-times"></div>
+
+    <div class="user">
+        <h3 id="customer_name"></h3>
+        <a onclick="logout()">log out</a>
+    </div>
+
+    <nav class="navbar">
+        <a href="index.html"> <i class="fas fa-angle-right"></i> home </a>
+        <a href="about.html"> <i class="fas fa-angle-right"></i> about </a>
+        <a href="products.html"> <i class="fas fa-angle-right"></i> products </a>
+        <a href="contact.html"> <i class="fas fa-angle-right"></i> contact </a>
+        <a href="login.html"> <i class="fas fa-angle-right"></i> login </a>
+        <a href="register.html"> <i class="fas fa-angle-right"></i> register </a>
+        <a href="order.html"> <i class="fas fa-angle-right"></i> Track Order </a>
+   
+    </nav>
+
+</div>
+
+<!-- side-bar section ends -->
+
+<!-- category section starts  -->
+
+<section class="category">
+
+    <h1 class="heading"> shop by <span>category</span> </h1>
+
+    <div class="box-container">
+
+      <a href="products_tv.html" class="box">
+        <img src="images/arrival-2.jpg" alt="">
+        <h3>Laptops</h3>
+    </a>
+
+        <a href="products_phone.html" class="box">
+            <img src="images/cat_img2.png" alt="">
+            <h3>smartphones</h3>
+        </a>
+
+        <a href="products_headphone.html" class="box">
+            <img src="images/cat_img3.png" alt="">
+            <h3>headphones</h3>
+        </a>
+
+        <a href="products_watch.html" class="box">
+            <img src="images/cat_img4.png" alt="">
+            <h3>smartwatches</h3>
+        </a>
+
+        <a href="products_game.html" class="box">
+            <img src="images/cat_img5.png" alt="">
+            <h3>games</h3>
+        </a>
+
+        <a href="products_speaker.html" class="box">
+            <img src="images/cat_img7.png" alt="">
+            <h3>speakers</h3>
+        </a>
+
+    </div>
+
+</section>
+
+<!-- category section ends -->
+
+<!-- products section starts  -->
+
+<section class="products">
+
+    <h1 class="heading"> featured <span>Games</span> </h1>
+
+    <div class="box-container" id="gaming_prod">
+
+        
+    </div>
+
+</section>
+
+<!-- products section ends -->
+
+<!-- product banner section starts  -->
+
+
+
+<!-- product banner section ends -->
+
+
+
+<div class="modal fade product_view" id="product_view6">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer section starts  -->
+
+<section class="quick-links">
+
+    <img src="images/card_img.png" alt="">
+
+    <div class="links">
+        <a href="index.html"> home </a>
+        <a href="about.html"> about </a>
+        <a href="products.html"> products </a>
+        <a href="contact.html"> contact </a>
+        <a href="login.html"> login </a>
+        <a href="register.html"> register </a>
+      
+    </div>
+
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+    </div>
+
+</section>
+
+
+
+<!-- footer section ends -->
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script >
+    // Import the functions you need from the SDKs you need
+  
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+        apiKey: "AIzaSyCPDXVDWxk_V1xs2LzUtYyZaxapdLB2_3k",
+        authDomain: "dso34bt-presentation.firebaseapp.com",
+        projectId: "dso34bt-presentation",
+        storageBucket: "dso34bt-presentation.appspot.com",
+        messagingSenderId: "85605634322",
+        appId: "1:85605634322:web:32e1f4923280c70e50a3cb",
+        measurementId: "G-05EXPR3F2J"
+};
+  
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+    const db = firebase.firestore();
+    db.settings({timestampsInSnapshots:true});
+    firebase.analytics();
+  </script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+<script src="js/register.js"></script>
+<script src="js/displayUser.js"></script>
+<script src="js/logout.js"></script>
+<script src="js/displayproduct.js"></script>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script type='text/javascript' src="js/bootstrap.min.js"></script>
+<script type='text/javascript' src="js/jquery.mycart.js"></script>
+<script type="text/javascript">
+
+$(function () {
+
+  var goToCartIcon = function($addTocartBtn){
+    var $cartIcon = $(".my-cart-icon");
+    var $image = $('<img width="0px" height="0px" src="' + $addTocartBtn.data("image") + '"/>').css({"position": "fixed", "z-index": "999"});
+    $addTocartBtn.prepend($image);
+    var position = $cartIcon.position();
+    $image.animate({
+      top: position.top,
+      left: position.left
+    }, 500 , "linear", function() {
+      $image.remove();
+    });
+  }
+
+  $('.my-cart-btn').myCart({
+    currencySymbol: 'R',
+    classCartIcon: 'my-cart-icon',
+    classCartBadge: 'my-cart-badge',
+    classProductQuantity: 'my-product-quantity',
+    classProductRemove: 'my-product-remove',
+    classCheckoutCart: 'my-cart-checkout',
+    affixCartIcon: true,
+    showCheckoutModal: true,
+    numberOfDecimals: 2,
+    
+    clickOnAddToCart: function($addTocart){
+      goToCartIcon($addTocart);
+    },
+    afterAddOnCart: function(products, totalPrice, totalQuantity) {
+      console.log("afterAddOnCart", products, totalPrice, totalQuantity);
+    },
+    clickOnCartIcon: function($cartIcon, products, totalPrice, totalQuantity) {
+      console.log("cart icon clicked", $cartIcon, products, totalPrice, totalQuantity);
+    },
+    checkoutCart: function(products, totalPrice, totalQuantity) {
+      var checkoutString = "Total Price: " + totalPrice + "\nTotal Quantity: " + totalQuantity;
+      checkoutString += "\n\n id \t name \t summary \t price \t quantity \t image path";
+      $.each(products, function(){
+        checkoutString += ("\n " + this.id + " \t " + this.name + " \t " + this.summary + " \t " + this.price + " \t " + this.quantity + " \t " + this.image);
+      });
+      alert(checkoutString)
+      console.log("checking out", products, totalPrice, totalQuantity);
+    },
+
+    getDiscountPrice: function(products, totalPrice, totalQuantity) {
+      if (totalPrice >=30000) {
+        return totalPrice * 0.07
+      }else
+      return 0
+    }
+  });
+
+  $("#addNewProduct").click(function(event) {
+    var currentElementNo = $(".row").children().length + 1;
+    $(".row").append('<div class="col-md-3 text-center"><img src="images/img_empty.png" width="150px" height="150px"><br>product ' + currentElementNo + ' - <strong>$' + currentElementNo + '</strong><br><button class="btn btn-danger my-cart-btn" data-id="' + currentElementNo + '" data-name="product ' + currentElementNo + '" data-summary="summary ' + currentElementNo + '" data-price="' + currentElementNo + '" data-quantity="1" data-image="images/img_empty.png">Add to Cart</button><a href="#" class="btn btn-info">Details</a></div>')
+  });
+});
+</script>
+<script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-f28b29d1-e3f9-4578-bfa3-62850c85d0cf"></div>
+
+</body>
+</html>

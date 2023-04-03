@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant');
+body {
+  background: #eee;
+  font-family: Assistant, sans-serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+  font-size: 13px;
+
+
+  color: rgb(0, 0, 0);
+  background-color: #fff;
+}
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  padding: 4px;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: 10px solid #ddd;
+  
+}
+
+.cell-1 {
+  border-collapse: separate;
+  border-spacing: 0 4em;
+  background: #fff;
+  border-bottom: 5px solid transparent;
+  /*background-color: gold;*/
+  background-clip: padding-box;
+}
+
+thead {
+  background: #f18989;
+}
+td, th {
+
+  color: black;
+}
+
+.toggle-btn {
+  width: 40px;
+  height: 21px;
+  background: grey;
+  border-radius: 50px;
+  padding: 3px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s 0.1s ease-in-out;
+  -moz-transition: all 0.3s 0.1s ease-in-out;
+  -o-transition: all 0.3s 0.1s ease-in-out;
+  transition: all 0.3s 0.1s ease-in-out;
+}
+
+.toggle-btn > .inner-circle {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s 0.1s ease-in-out;
+  -moz-transition: all 0.3s 0.1s ease-in-out;
+  -o-transition: all 0.3s 0.1s ease-in-out;
+  transition: all 0.3s 0.1s ease-in-out;
+}
+
+.toggle-btn.active {
+  background: blue !important;
+}
+
+.toggle-btn.active > .inner-circle {
+  margin-left: 19px;
+}
+
+.col-md-10{
+  background-color: #eee;
+  padding-left: 0;
+  padding-right: 0;
+
+}
